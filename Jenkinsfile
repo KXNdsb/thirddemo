@@ -12,7 +12,7 @@ pipeline {
                 echo 'build test'
                 bat 'python --version'
                 bat 'pip install flask pytest'
-                bat 'export pythonpath=src;pytest'
+                bat 'set pythonpath=src;pytest'
             }
         }
     }
