@@ -4,7 +4,7 @@ pipeline {
         stage('Git-Checkout') {
 		steps {
 			echo "获得资源库 "
-			git branch: 'master', url: 'git@github.com:KXNdsb/thirddemo.git'
+			git branch: 'master', url: 'https://github.com.cnpmjs.org/KXNdsb/thirddemo.git'
 		}
 	}
         stage('test') {
